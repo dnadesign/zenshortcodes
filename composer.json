@@ -4,15 +4,15 @@
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "shortcodes"],
     "license": "BSD-3-Clause",
-    "authors": [
-    {
+    "authors": [{
         "name": "James Ayers",
         "email": "james@leapfrogdesign.co.nz"
-    }
-    ],
-    "require":
-    {
+    }],
+    "require": {
         "silverstripe/framework": "3.1.*",
         "silverstripe/cms": "3.1.*"
+    },
+    "extra": {
+        "installer-name": "zenshortcodes"
     }
 }
