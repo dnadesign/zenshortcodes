@@ -25,4 +25,8 @@ class ZenShortcode extends DataObject {
 
 	}
 
+    public function parser($arguments, $content, $parser, $shortcode) {
+        Config::inst()->update('SSViewer', 'theme_enabled', true);
+    }
+
 }

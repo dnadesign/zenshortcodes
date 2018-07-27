@@ -8,7 +8,7 @@ object::useCustomClass('HtmlEditorField_Toolbar', 'ZenHtmlEditorField_Toolbar');
 $config = HtmlEditorConfig::get('cms');
 $config->enablePlugins(array('zenshortcodes' => BASE_URL . '/'. ZENSHORTCODES_DIR . '/editor_plugin_src.js'));
 $config->addButtonsToLine(2, 'zenshortcodes');	
-$config->setOption('content_css', BASE_URL .'/'. ZENSHORTCODES_DIR.'/css/zenshortcodes.css');
+$config->setOption('content_css', BASE_URL . '/' . ZENSHORTCODES_DIR . '/css/zenshortcodes.css');
 $config->setOption('extended_valid_elements', '*[contenteditable|class|id]');
 
 ShortcodeParser::get('default')->register('zenshortcode', array('ZenShortCode', 'ShortcodeHandler'));
